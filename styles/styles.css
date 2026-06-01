@@ -203,15 +203,6 @@ body {
   flex-grow: 1;
 }
 
-h2 {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-p {
-  margin: 0;
-}
-
 .welcome {
   background-color: #334d57;
   background-image: url("../images/separator.svg"), url("../images/index-background.jpg");
@@ -242,10 +233,11 @@ p {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .advertising-text {
-  padding-bottom: 69px;
+  padding-bottom: 90px;
   width: 651px;
   margin: 0 auto;
   font-family: PT Sans, sans-serif;
@@ -345,6 +337,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+ text-transform: uppercase;
 }
 
 .invite-text {
@@ -412,6 +405,7 @@ p {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0;
 }
 
 .hotel-search {
@@ -428,6 +422,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hotel-text {
@@ -484,6 +479,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .sub-text {
@@ -506,9 +502,9 @@ p {
 
 .input-email-index {
   border: none;
-  width: 415px;
+  width: 422px;
   border-radius: 4px 0 0 4px;
-  padding: 14px 20px 14px 20px;
+  padding: 20px;
   font-family: PT Sans, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -520,7 +516,7 @@ p {
   border: none;
   width: 424px;
   border-radius: 4px 0 0 4px;
-  padding: 20px 14px;
+  padding: 20px 20px;
   font-family: PT Sans, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -540,7 +536,7 @@ p {
   font-size: 20px;
   line-height: 36px;
   font-weight: 400;
-  width: 232px;
+  width: 240px;
 }
 
 .page-footer {
@@ -559,13 +555,17 @@ p {
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 5px 0;
+  padding: 4px 2px;
   margin: 0;
 }
 
 .socials-item {
   width: 47px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 .socials-link {
@@ -602,6 +602,10 @@ p {
 
 .number:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-academy-link {
+  color: #000000;
 }
 
 .logo-academy-link:hover {
@@ -1039,14 +1043,14 @@ checkbox::after:active {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 200px;
 }
 
 .sorting-control {
   box-sizing: border-box;
   padding: 12px 0 12px 16px;
   width: 292px;
-  margin-right: 70px;
-  margin-left: 200px;
+  height: 52px;
   font-family: PT Sans, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1076,6 +1080,7 @@ checkbox::after:active {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
 }
 
 .view-item {
@@ -1166,6 +1171,7 @@ checkbox::after:active {
   text-transform: capitalize;
   color: #000000;
   padding: 16px 0;
+  margin: 0;
 }
 
 .card-text {
@@ -1428,6 +1434,7 @@ checkbox::after:active {
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 64px;
+  margin: 0;
 }
 
 .data-list {
@@ -1474,13 +1481,13 @@ checkbox::after:active {
   font-weight: 700;
 }
 
-.data-input:hover{
-background-color: #e5e5e5;
+.data-input:hover {
+  background-color: #e5e5e5;
 }
 
-.data-input:focus{
-background-color: #e5e5e5;
-border: 2px solid #83b3d3;
+.data-input:focus {
+  background-color: #e5e5e5;
+  border: 2px solid #83b3d3;
 }
 
 .modal-mess {
@@ -1559,16 +1566,18 @@ border: 2px solid #83b3d3;
 
 .kid-label {
   margin-right: 10px;
-  color: #000000;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  padding-top: 12px;
-  width: 122px;
+  min-width: 49px;
 }
 
 .popover {
+  display: flex;
+  width: 90px;
+  margin-right: 40px;
+}
+
+.popover-section {
   position: relative;
+  padding-top: 10px;
 }
 
 .button-popover {

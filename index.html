@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="images/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -100,7 +102,7 @@
           <ul class="adviсe-list">
             <li class="adviсe-item home">
               <h3 class="adviсe-title">Жильё</h3>
-              <p class="adviсe-text">Рекомендуем пожить <br>в настоящем мотеле, всё как в кино!</p>
+              <p class="adviсe-text">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
             <li class="adviсe-item food">
               <h3 class="adviсe-title">Еда</h3>
@@ -248,8 +250,9 @@
               </div>
             </li>
             <li class="age-item">
-              <label class="label-title kid-label" for="kid">Дети:</label>
               <div class="popover">
+              <label class="label-title kid-label" for="kid">Дети:</label>
+              <div class="popover-section">
                 <button class="button-popover" type="button">
                   i
                   <span class="visually-hidden">Открыть дополнительную информацию.</span>
@@ -260,12 +263,13 @@
                     которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </p>
+                </div>
+              </div>
                 <div class="button-number">
                   <button class="button-sign" type="button">-</button>
                   <input class="number-input" type="number" name="kid" id="kid" value="2">
                   <button class="button-sign" type="button">+</button>
                 </div>
-              </div>
             </li>
           </ul>
         </form>
