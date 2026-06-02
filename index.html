@@ -125,7 +125,8 @@
           <h2 class="sub-title">Подпишитесь на рассылку</h2>
           <p class="sub-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="sub-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-email-index" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="email">Ваш email</label>
+            <input class="input-email-index" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button-sub" type="submit">Подписаться</button>
           </form>
         </section>
@@ -214,10 +215,6 @@
         </section>
       </footer>
     </div>
-
-
-
-
     <section class="modal">
       <div class="modal-window">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -244,37 +241,53 @@
             <li class="age-item">
               <label class="label-title age-label" for="adult">Взрослые: </label>
               <div class="button-number">
-                <button class="button-sign" type="button">-</button>
+                <button class="button-sign" type="button">
+                  -
+                  <span class="visually-hidden">Уменьшить количество на 1</span>
+                </button>
+
                 <input class="number-input" type="number" name="adult" id="adult" value="2">
-                <button class="button-sign" type="button">+</button>
+                <button class="button-sign" type="button">
+                  +
+                  <span class="visually-hidden">Увеличить количство на 1</span>
+                </button>
+
               </div>
             </li>
             <li class="age-item">
               <div class="popover">
-              <label class="label-title kid-label" for="kid">Дети:</label>
-              <div class="popover-section">
-                <button class="button-popover" type="button">
-                  i
-                  <span class="visually-hidden">Открыть дополнительную информацию.</span>
-                </button>
-                <p class="popover-content">
-                  <span class="popover-text">
-                    Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </span>
-                </p>
+                <label class="label-title kid-label" for="kid">Дети:</label>
+                <div class="popover-section">
+                  <button class="button-popover" type="button">
+                    i
+                    <span class="visually-hidden">Открыть дополнительную информацию.</span>
+                  </button>
+                  <p class="popover-content">
+                    <span class="popover-text">
+                      Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </p>
                 </div>
               </div>
-                <div class="button-number">
-                  <button class="button-sign" type="button">-</button>
-                  <input class="number-input" type="number" name="kid" id="kid" value="2">
-                  <button class="button-sign" type="button">+</button>
-                </div>
+              <div class="button-number">
+                <button class="button-sign" type="button">
+                  -
+                  <span class="visually-hidden">Уменьшить количество на 1</span>
+                </button>
+
+                <input class="number-input" type="number" name="kid" id="kid" value="2">
+                <button class="button-sign" type="button">
+                  +
+                  <span class="visually-hidden">Увеличить количество на 1</span>
+                </button>
+
+              </div>
             </li>
           </ul>
         </form>
         <button class="search-modal" type="submit">Найти</button>
-        <button class="close-modal">
+        <button class="close-modal" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
       </div>

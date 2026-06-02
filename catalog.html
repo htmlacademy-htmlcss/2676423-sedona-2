@@ -145,17 +145,17 @@
             </select>
             <ul class="view-lists">
               <li class="view-item">
-                <a class="view-cards dark-border" href="#">
+                <a class="view-type view-cards view-type-active" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
-              <li class="view-item light-border">
-                <a class="view-card" href="#">
+              <li class="view-item">
+                <a class="view-type view-card" href="#">
                   <span class="visually-hidden">Показать карточку</span>
                 </a>
               </li>
               <li class="view-item">
-                <a class="view-list" href="#">
+                <a class="view-type view-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="buttons">
                   <a class="link-details" href="#">подробнее</a>
-                  <button class="button-favorites" type="submit">в избранное</button>
+                  <button class="button-favorites" type="button">в избранное</button>
                 </div>
                 <div class="rating">
                   <span class="rating-stars stars-four"></span>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="buttons">
                   <a class="link-details" href="#">подробнее</a>
-                  <button class="button-favorites added-favorites" type="submit">в избранное</button>
+                  <button class="button-favorites added-favorites" type="button">в избранное</button>
                 </div>
                 <div class="rating">
                   <span class="rating-stars stars-four"></span>
@@ -216,7 +216,7 @@
                 </div>
                 <div class="buttons">
                   <a class="link-details" href="#">подробнее</a>
-                  <button class="button-favorites" type="submit">в избранное</button>
+                  <button class="button-favorites" type="button">в избранное</button>
                 </div>
                 <div class="rating">
                   <span class="rating-stars stars-three"></span>
@@ -236,7 +236,7 @@
                 </div>
                 <div class="buttons">
                   <a class="link-details" href="#">подробнее</a>
-                  <button class="button-favorites" type="submit">в избранное</button>
+                  <button class="button-favorites" type="button">в избранное</button>
                 </div>
                 <div class="rating">
                   <span class="rating-stars stars-four"></span>
@@ -272,7 +272,8 @@
           <h2 class="sub-title">Подпишитесь на рассылку</h2>
           <p class="sub-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="sub-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input class="input-email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
             <button class="button-sub" type="submit">Подписаться</button>
           </form>
         </section>
